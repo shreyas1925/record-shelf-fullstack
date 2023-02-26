@@ -1,0 +1,80 @@
+.grey--container .container .container--card{
+    /* flex-basis:32%; */
+    margin: 10px 0px;
+    background-color: #DFDFDF;
+    height: 240px;
+    width: 225px;
+    padding:15px 15px;
+    border-radius: 20px;
+    box-shadow: 2px 4px 12px 1px rgba(0, 0, 0.2, 0.2);
+}
+
+.grey--container .container .container--card img{
+    border-radius: 50%;
+}
+
+.grey--container .container .container--card:nth-child(even)
+{
+    background-color: #ABABAB;
+}
+
+.container--card img{
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    display: block;
+}
+
+.card--footer{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.red--heart{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+
+.red--heart img{
+    width: 33px;
+    height: 33px;
+}
+
+.red--heart p{
+    position: absolute;
+    left: 12px;
+    color: white;
+}
+
+.card--details h3{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* number of lines to show */
+            line-clamp: 1; 
+    -webkit-box-orient: vertical;
+}
+
+@media screen and (max-width: 868px) {
+    .grey--container .container .container--card{
+        width: 300px;
+        height: 300px;
+        /* margin: 30px 30px; */
+        margin-left: -15px;
+    }
+
+    .grey--container .container .container--card > img{
+        width: 200px;
+        height: 200px;
+        margin: auto;
+        display: block;
+    }
+    .red--heart img{
+        width: 33px;
+        height: 33px;
+    }
+
+}

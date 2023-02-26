@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+.grey--container .container{
+    width: 100%;
+    /* margin: auto;s */
+    /* height: 100vh; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* margin-bottom: 20px; */
+    /* margin-top: 20px; */
+}
+
+.grey--container .mini--header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 660px;
+    font-weight: 900px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.grey--container .mini--header img{
+    width: 30px;
+    height: 30px;
+    margin-top: 20px;
+    margin-right:20px;
+}
+
+.grey--container .mini--header h1{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 868px) {
+*{
+    overflow-x: none;
+}
+    .grey--container .mini--header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        font-weight: 900px;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    .grey--container .mini--header img{
+        width: 30px;
+        height: 30px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        margin-right: 5px;
+    }
+    
+    .grey--container .mini--header h1{
+        margin-top: 20px;
+        margin-right: 90px;
+        margin-left: -25px;
+    }
+}
