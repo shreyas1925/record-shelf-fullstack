@@ -36,6 +36,7 @@
     flex-direction: row;
     align-items: center;
     position: relative;
+    cursor: pointer;
 }
 
 .red--heart img{

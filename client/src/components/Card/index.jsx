@@ -1,32 +1,28 @@
-import React, { useEffect, useState } from "react";
+import React, {useState } from "react";
 import "./Card.css";
 import redHeart from "../../assets/heart-red.svg";
 import blackHeart from "../../assets/heart-gray.svg";
 import makeRequest from "../../utils/makeRequest";
+import { UPDATE_SONG_LIKE_BY_ID } from "../../constants/apiEndPoints";
 
 const Card = ({ song, counts, likes }) => {
-  const [countInc, setCountInc] = useState(counts);
+  
+  // const [countInc, setCountInc] = useState(counts);
   const [likeInc, setLikeInc] = useState(likes);
 
   const likedImage = likes ? redHeart : blackHeart;
 
-  const handleStates = async () => {
-
+  const handleLikes = async () => {
     console.log("hello")
     try{
-      await makeRequest(
-        `api/records/${song.id}/likes`,
-        { method: "patch" },
-        { data: { like:!likeInc }},
-      )
-      setCountInc(!likeInc ? countInc + 1 : countInc - 1);
+      const res = await makeRequest(UPDATE_SONG_LIKE_BY_ID(song.id),{ data: { like:!likeInc }})
+      // likeInc ? setCountInc(countInc - 1) : setCountInc(countInc + 1);
+      console.log(res)
       setLikeInc(!likeInc);
     } catch(e){
-        console.log(e);
+      // 
     }
-
-  };
-  // console.log(song);
+  }
   return (
     <div className="container--card">
       <img alt="card" src={song.imageUrl} />
@@ -36,7 +32,7 @@ const Card = ({ song, counts, likes }) => {
           <p>{song.artist.name}</p>
         </div>
         <div className="red--heart">
-          <img src={likedImage} alt="red-heart" onClick={handleStates}/>
+          <img src={likedImage} alt="red-heart" onClick={handleLikes}/>
           <p>{counts}</p>
         </div>
       </div>
