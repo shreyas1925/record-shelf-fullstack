@@ -32,12 +32,12 @@ const makeRequest = async (apiEndPoint, dynamicConfig, navigate) => {
       const { data } = await axios(requestDetails);
       return data;
     } catch (error) {
-    //   const errorCode = error.response?.status;
-    //   if (errorCode) {
-    //     navigate(`/error/${errorCode}`);
-    //   } else {
-    //     navigate("/error");
-    //   }
+      const errorCode = error.response?.status;
+      if (errorCode) {
+        navigate(`/error/${errorCode}`);
+      } else {
+        navigate("/error");
+      }
     }
   };
   

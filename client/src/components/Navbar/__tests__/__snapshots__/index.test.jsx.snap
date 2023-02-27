@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar Snapshot should render forming a snapshot 1`] = `
+<DocumentFragment>
+  <header>
+    <a
+      href="/"
+    >
+      <p>
+        My 
+        <span>
+          Record
+        </span>
+         Shelf
+      </p>
+    </a>
+  </header>
+</DocumentFragment>
+`;

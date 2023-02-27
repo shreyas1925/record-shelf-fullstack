@@ -1,5 +1,7 @@
 import Home from './Home';
 import Songs from './Songs';
 import Genre from './Genres';
-import WrapperPage from './WrapperPage';
-export { Home,Songs,Genre,WrapperPage}
+import ErrorPage from './ErrorPage';
+import PageNotFound from './PageNotFound';
+
+export { Home,Songs,Genre,ErrorPage,PageNotFound}

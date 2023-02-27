@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card Snapshot should render forming a snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="container--card"
+    data-testid="card"
+  >
+    <img
+      alt="card"
+      src="https://i.scdn.co/image/ab67616d0000b27317b3850d758fff5a2301e537"
+    />
+    <div
+      class="card--footer"
+    >
+      <div
+        class="card--details"
+      >
+        <h3>
+          This Love
+        </h3>
+        <p>
+          Maroon 5
+        </p>
+      </div>
+      <div
+        class="red--heart"
+      >
+        <img
+          alt="heart"
+          src="heart-gray.svg"
+        />
+        <p>
+          0
+        </p>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

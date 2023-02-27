@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home Snapshot should render forming a snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="home--container"
+    data-testid="home"
+  >
+    <p>
+      :((
+    </p>
+    <p>
+      seems a bit empty in here...
+    </p>
+    <button>
+      <a
+        href="/songs"
+      >
+        sync
+      </a>
+    </button>
+  </div>
+</DocumentFragment>
+`;

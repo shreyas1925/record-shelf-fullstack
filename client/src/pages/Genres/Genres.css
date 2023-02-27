@@ -1,5 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
+.song--container{
+    /* height:100vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    /* justify-content: center; */
+}
+
+.grey--container{
+    background-color: #F5F5F5;
+    width: 900px;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 30px;
+}
 .grey--container .container{
     width: 100%;
     /* margin: auto;  */
@@ -107,6 +128,9 @@
         margin-top: 20px;
         margin-right: 90px;
         margin-left: -25px;
+    }
+    .grey--container{
+        width: 100%;
     }
     
 }

@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Song Snapshot should render forming a snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="song--container"
+    data-testid="songs"
+  >
+    <div
+      class="grey--container"
+    >
+      <div
+        class="mini--header"
+      >
+        <h1>
+          all songs
+        </h1>
+        <a
+          data-testid="genre"
+          href="/genre"
+        >
+          <img
+            alt="heart"
+            src="icon-genre.svg"
+          />
+        </a>
+      </div>
+      <div
+        class="container"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;

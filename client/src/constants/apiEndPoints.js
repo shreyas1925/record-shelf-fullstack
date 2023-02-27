@@ -1,4 +1,4 @@
-
+export const BACKEND_URL = "http://localhost:8080/";
 export const GET_SONGS = {
   url: "/api/records",
   method: "get",
