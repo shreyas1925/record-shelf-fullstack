@@ -1,4 +1,4 @@
-import Card from "./Card";
-import Navbar from "./Navbar";
+import Card from './Card';
+import Navbar from './Navbar';
 
 export { Card, Navbar};

@@ -4,4 +4,4 @@ import Genre from './Genres';
 import ErrorPage from './ErrorPage';
 import PageNotFound from './PageNotFound';
 
-export { Home,Songs,Genre,ErrorPage,PageNotFound}
+export { Home,Songs,Genre,ErrorPage,PageNotFound};

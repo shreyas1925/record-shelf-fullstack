@@ -20,7 +20,7 @@ exports[`PageNotFound Page Snapshot should render forming a snapshot 1`] = `
           404
         </h1>
         <h5>
-          Look like you're lost , return to home 
+          Look like you are lost , return to home 
         </h5>
         <button
           class="link_404"

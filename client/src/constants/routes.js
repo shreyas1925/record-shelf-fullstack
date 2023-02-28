@@ -1,1 +1,1 @@
-export const ERROR_ROUTE = "/error";
+export const ERROR_ROUTE = '/error';

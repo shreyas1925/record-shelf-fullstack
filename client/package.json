@@ -34,8 +34,10 @@
     ],
     "coveragePathIgnorePatterns": [
       "<rootDir>/node_modules/",
-      "<rootDir>/src/index.jsx",
+      "<rootDir>/src/index.js",
+      "<rootDir>/src/reportWebVitals.js",
       "<rootDir>/src/constants/",
+      "<rootDir>/src/utils/common",
       "<rootDir>/src/components/index.jsx",
       "<rootDir>/src/pages/index.jsx"
     ],
@@ -72,5 +74,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint": "^8.35.0",
+    "eslint-plugin-react": "^7.32.2"
   }
 }
