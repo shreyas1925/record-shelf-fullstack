@@ -54,6 +54,21 @@
     margin-left: 20px;
 }
 
+.mini--header input{
+    width:280px;
+    height: 30px;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 34px;
+}
+
+.mini--header input:focus{
+    width:280px;
+    height: 30px;
+    border-radius: 20px;
+    outline: none;
+}
+
 @media screen and (max-width: 868px) {
 *{
     overflow-x: none;

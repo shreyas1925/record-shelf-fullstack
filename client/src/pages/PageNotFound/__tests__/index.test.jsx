@@ -11,6 +11,7 @@ describe("PageNotFound Page Snapshot", () => {
 
 describe("PageNotFound Page", () => {
     it("should render page without crashing", () => {
+      
       render(<BrowserRouter><PageNotFound/></BrowserRouter>);
       const errorPageElement = screen.getByTestId("notfound");
       expect(errorPageElement).toBeInTheDocument();

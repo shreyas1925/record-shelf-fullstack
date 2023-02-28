@@ -52,7 +52,7 @@ const Genre = () => {
               </div>
               <div className="container">
                 {genres[category].map((song) => (
-                  <Card song={song} />
+                  <Card key={song.id} song={song} />
                 ))}
               </div>
             </div>

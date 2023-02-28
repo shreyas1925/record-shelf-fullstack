@@ -14,6 +14,7 @@ describe("Error Page", () => {
       render(<BrowserRouter><ErrorPage/></BrowserRouter>);
       const errorPageElement = screen.getByTestId("error-page");
       expect(errorPageElement).toBeInTheDocument();
+      
     });
 
     it("should display text after rendering", () => {

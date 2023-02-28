@@ -5,6 +5,8 @@ import blackHeart from "../../assets/heart-gray.svg";
 import makeRequest from "../../utils/makeRequest";
 import { GET_SONG_LIKE_BY_ID, UPDATE_SONG_LIKE_BY_ID } from "../../constants/apiEndPoints";
 
+import PropTypes from 'prop-types';
+
 const Card = ({ song }) => {
   
   const [countInc, setCountInc] = useState(0);
@@ -16,9 +18,6 @@ const Card = ({ song }) => {
           setCountInc(response.data.count)
           setLikeInc(response.data.like)
         })
-        .catch((e) => {
-          // setError(e.message);
-      });
   })
   
   const likedImage = likeInc ? redHeart : blackHeart;
@@ -28,10 +27,11 @@ const Card = ({ song }) => {
       await makeRequest(UPDATE_SONG_LIKE_BY_ID(song.id),{ data: { like:!likeInc } });
       setCountInc(likeInc ? countInc - 1 : countInc + 1);
       setLikeInc(!likeInc);
-    } catch(e){
-      // 
+    }catch(error){
+      console.log(error)
     }
   }
+  
   return (
     <div className="container--card" data-testid='card'>
       <img alt="card" src={song.imageUrl} />
@@ -40,8 +40,8 @@ const Card = ({ song }) => {
           <h3>{song.name}</h3>
           <p>{song.artist.name}</p>
         </div>
-        <div className="red--heart">
-          <img src={likedImage} alt="heart" onClick={handleLikes}/>
+        <div className="red--heart" onClick={handleLikes}>
+          <img src={likedImage} alt="heart"/>
           <p>{countInc}</p>
         </div>
       </div>
@@ -50,3 +50,7 @@ const Card = ({ song }) => {
 };
 
 export default Card;
+
+Card.prototype = {
+  song: PropTypes.object.isRequired
+};

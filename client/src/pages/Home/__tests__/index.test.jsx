@@ -14,6 +14,7 @@ describe("Home", () => {
     render(<BrowserRouter><Home/></BrowserRouter>);
     const homeElement = screen.getByTestId("home");
     expect(homeElement).toBeInTheDocument();
+    
   });
   it("should display data after data rendering", () => {
     render(<BrowserRouter><Home/></BrowserRouter>);

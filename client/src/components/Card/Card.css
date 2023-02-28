@@ -7,6 +7,12 @@
     padding:15px 15px;
     border-radius: 20px;
     box-shadow: 2px 4px 12px 1px rgba(0, 0, 0.2, 0.2);
+    transition: transform 0.5s;
+}
+
+.grey--container .container .container--card:hover{
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 .grey--container .container .container--card img{
@@ -40,8 +46,8 @@
 }
 
 .red--heart img{
-    width: 33px;
-    height: 33px;
+    width: 35px;
+    height: 35px;
 }
 
 .red--heart p{
